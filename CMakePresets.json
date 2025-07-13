@@ -1,0 +1,23 @@
+{
+    "version": 8,
+    "configurePresets": [
+        {
+            "name": "default",
+            "displayName": "GCC 14.2.1 x86_64-pc-linux-gnu",
+            "description": "Using compilers: C = /usr/bin/gcc, CXX = /usr/bin/g++",
+            "binaryDir": "${sourceDir}/out/build/${presetName}",
+            "cacheVariables": {
+                "CMAKE_INSTALL_PREFIX": "/cmangos/server",
+                "CMAKE_C_COMPILER": "/usr/bin/gcc",
+                "CMAKE_CXX_COMPILER": "/usr/bin/g++",
+                "CMAKE_BUILD_TYPE": "Debug",
+                "BUILD_EXTRACTORS": "ON",
+                "PCH": "1",
+                "DEBUG": "1",
+                "BUILD_PLAYERBOTS": "ON",
+                "BUILD_AHBOT": "ON",
+                "BUILD_SCRIPTDEV": "ON"
+            }
+        }
+    ]
+}

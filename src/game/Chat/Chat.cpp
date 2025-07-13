@@ -35,8 +35,11 @@
 #include "Pools/PoolManager.h"
 #include "GameEvents/GameEventMgr.h"
 
-#ifdef ENABLE_PLAYERBOTS
+#ifdef BUILD_AHBOT
 #include "ahbot/AhBot.h"
+#endif
+
+#ifdef ENABLE_PLAYERBOTS
 #include "playerbot/playerbot.h"
 #include "playerbot/PlayerbotAIConfig.h"
 #endif
